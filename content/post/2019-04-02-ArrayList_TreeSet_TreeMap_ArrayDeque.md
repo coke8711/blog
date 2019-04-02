@@ -6,7 +6,7 @@ date:        2019-04-02
 author:      "Junhwan Kim"
 image:       ""
 tags:        ["Java", "Collections"]
-categories:  ["Note" ]
+categories:  ["tech" ]
 published: true
 ---
 
