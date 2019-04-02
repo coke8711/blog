@@ -43,9 +43,11 @@ TreeMap은 key 관리를 위해서 TreeSet<K>클래스를 사용합니다.
 java.util.Deque<E>인터페이스는 Queue<E>인터페이스의 서브 인터페이스입니다.
 양쪽으로 요소의 추가, 삭제가 가능한 데이터 구조입니다.
 
+```
 꺼내기 : getLast 또는 removeLast                       getFirst 또는 removeFirst
              앞  ○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○○ 뒤
 삽입 : addFirst                                        addLast
+```
 
 ArrayDeque<E>클래스는 내부에 배열을 사용한 Deque인터페이스로 구현됩니다.
 FIFO(Queue)로 사용되는 경우에는, LinkedList<E>클래스를 사용하는 것 보다 빠릅니다.
