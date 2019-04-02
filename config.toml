@@ -1,7 +1,7 @@
-baseurl = "https://zhaohuabing.com"
-title = "Huabing Blog"
+baseurl = "https://jun4404.github.io/"
+title = "Junhwan's Blog"
 theme = "hugo-theme-cleanwhite"
-languageCode = "en-us"
+languageCode = "ko-KR"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 googleAnalytics = ""
@@ -59,7 +59,7 @@ home = ["HTML", "RSS", "Algolia"]
 
   [params.social]
   rss            = true 
-  email          = "youremail@gmail.com"
+  email          = "jun4404@gmail.com"
   #facebook      = "full profile url in facebook"
   #googleplus    = "full profile url in googleplus"
   #twitter       = "full profile url in twitter"
