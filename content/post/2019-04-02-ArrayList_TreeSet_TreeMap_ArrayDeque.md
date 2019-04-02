@@ -9,7 +9,7 @@ author:      "Junhwan Kim"
 image:       "https://img.zhaohuabing.com/in-post/2018-06-02-istio08/background.jpg"
 tags:        ["Java", "Collections"]
 categories:  ["tech" ]
-URL: "2019-04-02-ArrayList_TreeSet_TreeMap_ArrayDeque.md"
+URL: "/post/2019-04-02-ArrayList_TreeSet_TreeMap_ArrayDeque/"
 published: true
 ---
 
