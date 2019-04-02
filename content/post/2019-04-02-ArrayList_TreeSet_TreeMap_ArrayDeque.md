@@ -1,12 +1,15 @@
 ---
+layout:     post
+
 title:       "ArrayList, Set, TreeSet, TreeMap, Deque, ArrayDeque"
 subtitle:    ""
 description: "Java의 ArrayList, Set, TreeSet, TreeMap, Deque, ArrayDeque에 대한 메모"
 date:        2019-04-02
 author:      "Junhwan Kim"
-image:       ""
+image:       "https://img.zhaohuabing.com/in-post/2018-06-02-istio08/background.jpg"
 tags:        ["Java", "Collections"]
 categories:  ["tech" ]
+URL: "/2019/04/02/Collections01/"
 published: true
 ---
 
