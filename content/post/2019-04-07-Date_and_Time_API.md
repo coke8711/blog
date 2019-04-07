@@ -9,7 +9,7 @@ author:      "Junhwan Kim"
 image:       "https://img.zhaohuabing.com/in-post/2018-06-02-istio08/background.jpg"
 tags:        ["Java", "API"]
 categories:  ["Tech" ]
-URL: "/post/2019-04-07-Date_and_Time_API/"
+URL: "/post/2019-04-07-date_and_time_api/"
 published: true
 ---
 
