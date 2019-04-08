@@ -12,13 +12,15 @@ URL: "/post/2019-04-02-assertion_and_exception/"
 published: true
 ---
 
+
+
 ## 예외와 Assertion
 
 - 메소드 내에서 예외를 던질 때는 throw문을 사용한다.
-
 - throw new Exception();
-
 - Throwable getCause() : Exception을 발생 시킨 Throwable object 를 반환
+
+
 ```
 public static void main(String[] args){
     try{
