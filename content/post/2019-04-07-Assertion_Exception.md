@@ -58,6 +58,7 @@ static void z() throws Exception{
 ## try-catch문과 throw문
 
 - 보통의 catch문
+
 ```
 try {
     //예외가 발생할 가능성이 있는 처리
@@ -78,6 +79,7 @@ try {
 - 복수의 catch 블록을 하나로 모아서 처리할 수 있다.
 
 - 주의 사항: 사용된 예외들은 예외의 상속관계에서 부모 자식관계에 있으면 안된다.
+
 ```
 try {
     // 예외가 발생할 가능성이 있는 처리
@@ -103,12 +105,15 @@ try {
 - 독자 예외클래스와 에러 클래스를 사용하기 위해서는 java.lang.Throwable 클래스 또는 서브클래스를 상속받을 필요가 있다.
 
 - 일반적으로는 java.lang.Exception 클래스를 사용한다.
+
 ```
 public class MyException extends Exception {
     // 구현
 }
 ```
+
 - 작성한 예외 클래스는 try-catch 문의 catch 블록의 인수로 지정이 가능하다.
+
 ```
 try {
     doIt();
@@ -128,6 +133,7 @@ void doIt(int value){
 - 파일이나 데이터베이스등 외부 리소스를 이용할 때 오픈한 리소스를 자동적으로 클로즈 하는 구조를 제공한다.
 
 보통의 try-catch 구문(java SE 6 이전)
+
 ```
 FileReader in = null;
 FileWriter out = null;
@@ -153,6 +159,7 @@ try{
 ```
 
 java SE 7부터 도입된 try-with-resources 문
+
 ```
 try (FileReader in = new FileReader("in.txt");
     FileWriter out = new FileReader("out.txt")) {
@@ -161,6 +168,7 @@ try (FileReader in = new FileReader("in.txt");
         // 예외 처리
     }
 ```
+
 - 꼭, catch 블록, finally 블록이 필요한 것은 아니다.
 
 ## 리소스의 close(), AutoCloseable 인터페이스
@@ -189,13 +197,15 @@ public class Example {
 ```
 assert 조건식;
 ```
+
 조건식이 false 일 경우 java.lang.AsesertionError 가 발생한다.
+
 ```
 assert(x ==1); // 공백 없음
 assert (x == 1); //공백 있음, 둘 다 가능.
-```
-```
+
 assert 조건식 : 인수  
 assert x ==1 : "Error Message";
 ```
+
 - 프로그램 실행시 -ea옵션을 추가하면 assertion기능을 사용할  수 있다. 
