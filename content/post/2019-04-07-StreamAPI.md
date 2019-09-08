@@ -1,15 +1,11 @@
 ---
-layout:     post
+date: 2019-04-07T16:07:11+09:00
 title:       "Stream API"
-subtitle:    ""
-description: "Stream API에 대한 메모"
-date:        2019-04-07
-author:      "Junhwan Kim"
-image:       "https://img.zhaohuabing.com/in-post/2018-06-02-istio08/background.jpg"
-tags:        ["Java", "Stream"]
-categories:  ["Tech" ]
-URL: "/post/2019-04-07-stream/"
-published: true
+authors: ["junhwankim"]
+categories:
+  -
+tags:
+  -
 ---
 
 ## Stream API

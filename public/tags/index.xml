@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Junhwan Blog</title>
+    <link>https://jun4404.github.io/tags/</link>
+    <description>Recent content in Tags on Junhwan Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 07 Apr 2019 16:07:11 +0900</lastBuildDate>
+    
+	<atom:link href="https://jun4404.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

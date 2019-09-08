@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Junhwan Blog</title>
+    <link>https://jun4404.github.io/post/</link>
+    <description>Recent content in Posts on Junhwan Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 07 Apr 2019 16:07:11 +0900</lastBuildDate>
+    
+	<atom:link href="https://jun4404.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Assertion And Exception</title>
+      <link>https://jun4404.github.io/post/2019-04-07-assertion_exception/</link>
+      <pubDate>Sun, 07 Apr 2019 16:07:11 +0900</pubDate>
+      
+      <guid>https://jun4404.github.io/post/2019-04-07-assertion_exception/</guid>
+      <description>예외와 Assertion  메소드 내에서 예외를 던질 때는 throw문을 사용한다. throw new Exception(); Throwable getCause() : Exception을 발생 시킨 Throwable object 를 반환
+public static void main(String[] args){ try{ x(); }catch(Throwable e){ while(e != null) { System.out.println(e.getMessage()); e = e.getCause(); } } } static void x() throws Exception{ try{ y(); } catch(Exception e){ throw new Exception(&amp;quot;exception in x()&amp;quot;, e); } } static void y() throws Exception{ try{ z(); } catch(Exception e){ throw new Exception(&amp;quot;exception in y()&amp;quot;, e); } } static void z() throws Exception{ throw new Exception(&amp;quot;exception in z()&amp;quot;); }   try-catch문과 throw문  보통의 catch문</description>
+    </item>
+    
+    <item>
+      <title>collections와 generics</title>
+      <link>https://jun4404.github.io/post/2019-04-07-collections_generics/</link>
+      <pubDate>Sun, 07 Apr 2019 16:07:11 +0900</pubDate>
+      
+      <guid>https://jun4404.github.io/post/2019-04-07-collections_generics/</guid>
+      <description>컬렉션과 제네릭스 컬렉션 API(프레임워크) : 복수의 데이터를 하나로 모아서 다루기 위한 데이터 구조, 유틸리티 기능
+1)제네릭 클래스, 제네릭 인터페이스
+ 제네릭 : 클래스에서 사용할 타입을 클래스 외부에서 설정
+ 객체의 타입 범용성, 실행시 형변환의 안정성을 높여준다.
+ 제네릭 클래스 구현시 되지 않는 것.
+ static 키워드를 사용한 형변수
+ 형변수에 따른 인스턴스 생성
+ 형변수를 요소에 지정하는 배열의 생성
+ instanceof 연산자에 따른 형의 판정
+ 형변수에 대한.class의 참조</description>
+    </item>
+    
+    <item>
+      <title>Concurrent</title>
+      <link>https://jun4404.github.io/post/2019-04-07-concurrent/</link>
+      <pubDate>Sun, 07 Apr 2019 16:07:11 +0900</pubDate>
+      
+      <guid>https://jun4404.github.io/post/2019-04-07-concurrent/</guid>
+      <description>병행성 병행처리 유틸리티 java.util.concurrent 패키지에 있는 java.util.concurrent.atomic과 java.util.concurrent.locks에 따라 구성된다.
+병행처리 유틸리티에서 제공하는 기능은 Thread Pool, 병행컬렉션, atomic 변수, 카운팅, 세마포어등이 있다.
+- Thread Pool - 어플리케이션에서 필요한 스레드를 먼저 생성하여 Pool에 두어 오버헤드를 줄이고, 스레드관리성을 향상한다.
+- Executor 프레임워크가 스레드 풀 기능을 제공한다.
+병행 컬랙션  상태에대한 접근을 직렬화 하는 것으로 thread-safe를 실현한다.
+ 병행 처리는 오히려 성능이 떨어질 수도 있다.
+ 스레드로 부터 안전하고 잘 조정된 데이터 구조를 활용하여 동시 프로그래밍을 쉽게 할 수 있다.</description>
+    </item>
+    
+    <item>
+      <title>JAVA I/O</title>
+      <link>https://jun4404.github.io/post/2019-04-07-io/</link>
+      <pubDate>Sun, 07 Apr 2019 16:07:11 +0900</pubDate>
+      
+      <guid>https://jun4404.github.io/post/2019-04-07-io/</guid>
+      <description>JAVA I/O 1)입출력 Stream
+ 모든 데이터의 입출력에 관한 기본적인 메소드만 제공한다.  2)java.io 패키지
+ java.io 패키지는 기존의 파일이나 폴더에 대한 제어를 하는데 사용하는 File 클래스를 제공한다.
+ File(File parent, String child)
+ File(String pathname)
+ File(String parent, String child)
+ File(URI uri)
+ Decorator : java.io패키지의 입출력 스트림을 다룰때 여러가지 클래스와 조합해서 이용하기 위해 Decorator라고 불리는
+  디자인패턴 설계가 이용된다.
+ 객체를 동적으로 서브클래스를 이용해 확장한다.  3)File 클래스, FileReader, FileWriter 클래스</description>
+    </item>
+    
+    <item>
+      <title>JDBC</title>
+      <link>https://jun4404.github.io/post/2019-04-07-jdbc/</link>
+      <pubDate>Sun, 07 Apr 2019 16:07:11 +0900</pubDate>
+      
+      <guid>https://jun4404.github.io/post/2019-04-07-jdbc/</guid>
+      <description>JDBC JDBC란? Java 어플리케이션에서 관계형 데이터베이스(RDBMS)를 이용하기 위한 Technologies 로서, JDBC API와 JDBC 드라이버로 구성되어 있습니다.
+JDBC API Java 프로그램에서 데이터베이스에 접근하기 위한 API로서 JDK의 표준 라이브러리에 있는 java.sql패키지, javax.sql패키지의 인터페이스, 유틸리티 클래스로 제공됩니다.
+JDBC 드라이버 각 데이터베이스에 대해 접근하는 코드로 구현되어 있으며, 데이터베이스의 개발사들이 제공하고 있습니다. JDBC드라이버는 JDBC API에서 규정되어 있는 인터페이스에 구체적으로 제공되고 있습니다. 사용하는 데이터베이스 제품에 따라서 개별적으로 사용하고 있습니다.
+method 접속 : java.sql.DriverManager 클래스의 getConnection(String url), getConnection(String url, Properties info), getConnection(String url, String user, String password) JDBC 3.</description>
+    </item>
+    
+    <item>
+      <title>lambda</title>
+      <link>https://jun4404.github.io/post/2019-04-07-lambda/</link>
+      <pubDate>Sun, 07 Apr 2019 16:07:11 +0900</pubDate>
+      
+      <guid>https://jun4404.github.io/post/2019-04-07-lambda/</guid>
+      <description>2)람다식
+ 람다대수는 이름을 가질 필요가 없다.
+ 두 개 이상의 입력이 있는 함수는 최종적으로 1개의 입력만 받는 람다 대수로 단수화 될 수 있다.(커링)
+ 익명내부클래스의 구현을 간결히 할 수 있다.
+ 변수에 대해 함수를 대입하는 것이 가능하다.
+ 함수의 인수에 함수를 전달하는 것이 가능하다. -&amp;gt; 고계함수
+ 함수의 반환값을 함수로 전달하는 것이 가능하다. -&amp;gt; 고계함수
+ 인수를 받는 람다식에서는, 항상 인수의 type을 생략할 수 있다. 인수가 하나뿐인경우, 인수를 괄호에 넣는것도 생략 가능하다.</description>
+    </item>
+    
+    <item>
+      <title>Localize</title>
+      <link>https://jun4404.github.io/post/2019-04-07-localize/</link>
+      <pubDate>Sun, 07 Apr 2019 16:07:11 +0900</pubDate>
+      
+      <guid>https://jun4404.github.io/post/2019-04-07-localize/</guid>
+      <description>로컬라이즈  특정지역(언어, 숫자, 날짜) : java.util.Locale 클래스  1)java.util.Locale 클래스, Locale 오브젝트
+ Locale 오브잭트를 생성하는 코드 : Locale(String language), Locale(String language, String country),  Locale(String language, String country, String variant)
+ 시스템 디폴트 : Locale locale = Locale.getDefault();
+ Locale locale = Locale.JAPAN;
+  2)getDefault 메소드
+3)java.util.Locale.Builder 클래스
+ Locale옵브젝트를 생성하는 유연한 방법.
+ 제공되는 set메소드를 사용해서, 로케일에 관련한 여러가지 정보를 설정 후 build메소드를 호출 해 Locale 오브젝트 생성</description>
+    </item>
+    
+    <item>
+      <title>Stream API</title>
+      <link>https://jun4404.github.io/post/2019-04-07-streamapi/</link>
+      <pubDate>Sun, 07 Apr 2019 16:07:11 +0900</pubDate>
+      
+      <guid>https://jun4404.github.io/post/2019-04-07-streamapi/</guid>
+      <description>Stream API 1)Stream API 기본
+ 스트림 API는 데이터 집합조작용API
+ 함수형 인터페이스와 람다식을 이용한다.
+ 손쉬운 병렬처리를 지원한다.
+ 기본적인 동작 스텝
+  1)데이터 소스에서 스트림 오브젝트를 가져온다.
+2)스트림 오브젝트에 대해 중개연산(Intermediate Operation)을 적용한다.
+ 중개연산의 처리가 실행되는 것은 최종연산에서 한다.(지연평가)  3)스트림 오브젝트에 대한 최종연산(Terminal Operation)을 적용한다.
+ 지연되었던 모든 중개연산들이 최종연산 시 모두 수행된다.
+ 스트림은 원본 데이터를 변경하지 않는다.
+ 스트림은 재사용이 불가능하다.
+  2)java.</description>
+    </item>
+    
+    <item>
+      <title>날짜 / 시각 API</title>
+      <link>https://jun4404.github.io/post/2019-04-07-date_and_time_api/</link>
+      <pubDate>Sun, 07 Apr 2019 16:07:11 +0900</pubDate>
+      
+      <guid>https://jun4404.github.io/post/2019-04-07-date_and_time_api/</guid>
+      <description>Date and Time API의 패키지 java.time java.time.chrono java.time.format java.time.temporal java.time.zone  java.time 패키지 날짜와 시각을 표시하는 코어 API를 제공한다.(ISO 8601의 표준 달력 시스템에 기초한) Local time method
+LocalDate(날짜만) LocalTime(시각만) LocalDateTime(날짜와 시각)  시차정보를 표시하는 Offset Time
+OffsetTime(시각만) OffsetTime(날짜와 시간)  지역정보까지 표시하는 ZonedDateTime
+ZonedDateTime(지역정보를 포함)  월, 일의 개별정보
+Year(년) YearMonth(월) MonthDay(월일)  now method
+System.out.println(LocalDate.now()); // -&amp;gt; 2019-04-07 System.out.println(LocalTime.now()); // -&amp;gt; 12:10:30.888 System.out.println(LocalDateTime.now()); // -&amp;gt; 2019-04-07T12:10:30.888  문자열형식에서 LocalDate 인스턴스를 생성하기 LocalDate 클래스의 parse method 사용</description>
+    </item>
+    
+    <item>
+      <title>함수형 인터페이스</title>
+      <link>https://jun4404.github.io/post/2019-04-07-functionalinterface/</link>
+      <pubDate>Sun, 07 Apr 2019 16:07:11 +0900</pubDate>
+      
+      <guid>https://jun4404.github.io/post/2019-04-07-functionalinterface/</guid>
+      <description>함수형 인터페이스  인터페이스에 선언되어있는 추상메소드가 하나만 있을 경우 그 인터페이스를 함수형 인터페이스(Functional Interface)라고 부른다.
+ SAM(Single Abstract Method)라고 부르기도 한다.
+ java.lang.Runnable : void run()
+ java.util.Comparator : int compare(T o1, T o2)
+ java.nio.file.PathMatcher : boolean matches(Path path)
+ java.util.cuncurrent.Callable : V Call()
+ 인터페이스에 있는 default, static 메소드는 추상클래스가 아니다.
+ 함수형 인터페이스로서 타당한지를 컴파일시 체크 하기위한 어노테이션 java.lang.@FunctionalInterface가 추가되었다.
+  3)java.util.function 패키지
+4)Supplier, Predicate, Consumer, Function 인터페이스</description>
+    </item>
+    
+    <item>
+      <title>ArrayList, Set, TreeSet, TreeMap, Deque, ArrayDeque</title>
+      <link>https://jun4404.github.io/post/2019-04-02-arraylist_treeset_treemap_arraydeque/</link>
+      <pubDate>Tue, 02 Apr 2019 16:07:11 +0900</pubDate>
+      
+      <guid>https://jun4404.github.io/post/2019-04-02-arraylist_treeset_treemap_arraydeque/</guid>
+      <description>ArrayList java.util.List인터페이스의 대표적인 클래스입니다. ArrayList클래스는 이름대로, 내부에서 배열을 이용한 List 인터페이스를 구현합니다. List구조로 구현하고 있기 때문에 내부요소에 대한 람다접근의 퍼포먼스가 빠릅니다. 하지만 리스트에 요소를 추가하는데는, 새로운 배열을 작성해서 모든 요소를 하나씩 인덱스의 위치에 복사할 필요가 있어 인덱스의 추가되는 요소가 선두에 가까울 수록, 요소수가 늘면 늘수록 퍼포먼스가 저하됩니다. 동기화를 하지 않기 때문에, Thread-safe가 아닙니다.
+Set, TreeSet java.util.Set인터페이스의 대표적인 클래스입니다. java.util.Set는 요소의 중복을 허용하지 않습니다. 여기서 말하는 중복하는 요소란, equals메소드에 따라 같다고 판단되는 복수의 요소를 말합니다.</description>
+    </item>
+    
+  </channel>
+</rss>

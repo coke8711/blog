@@ -1,15 +1,11 @@
 ---
-layout:     post
+date: 2019-04-07T16:07:11+09:00
 title:       "collections와 generics"
-subtitle:    ""
-description: "collections와 generics에 대한 메모"
-date:        2019-04-07
-author:      "Junhwan Kim"
-image:       "https://img.zhaohuabing.com/in-post/2018-06-02-istio08/background.jpg"
-tags:        ["Java", "collections", "generics"]
-categories:  ["Tech" ]
-URL: "/post/2019-04-07-collections_generics/"
-published: true
+authors: ["junhwankim"]
+categories:
+  -
+tags:
+  -
 ---
 
 ## 컬렉션과 제네릭스

@@ -1,18 +1,12 @@
 ---
-layout:     post
+date: 2019-04-07T16:07:11+09:00
 title:       "Assertion And Exception"
-subtitle:    ""
-description: "Assertion And Exception에 대한 메모"
-date:        2019-04-07
-author:      "Junhwan Kim"
-image:       "https://img.zhaohuabing.com/in-post/2018-06-02-istio08/background.jpg"
-tags:        ["Java", "Assertion", "Exception"]
-categories:  ["Tech" ]
-URL: "/post/2019-04-02-assertion_and_exception/"
-published: true
+authors: ["junhwankim"]
+categories:
+  -
+tags:
+  -
 ---
-
-
 
 ## 예외와 Assertion
 
